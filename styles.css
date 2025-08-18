@@ -1,0 +1,55 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.flex-item {
+    background-color: #5cb85c;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 150px; /* Provides a base width for flex items */
+    text-align: center;
+}
+
+/* CSS Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns by default */
+    gap: 15px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    /* Changes the grid to a single column on small screens */
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
